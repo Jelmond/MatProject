@@ -1,0 +1,48 @@
+@use '../../../assets/styles/index.scss' as *;
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: rm(25);
+    margin-bottom: rm(40);
+    position: absolute;
+    bottom: rm(40);
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+
+    .img{
+        width: rm(593);
+        height: rm(43);
+    }
+
+    p{
+        font-size: font(16);
+        color: #858585;
+    }
+
+    .socials{
+        display: flex;
+        align-items: center;
+        gap: rm(20);
+
+        span{
+            width: rm(33);
+            height: rm(33);
+            position: relative;
+            cursor: pointer;
+
+            svg{
+                color: rgb(205, 215, 221);
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

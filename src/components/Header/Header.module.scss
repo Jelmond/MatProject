@@ -1,0 +1,52 @@
+@use '../../../assets/styles/index.scss' as *;
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: rm(15) rm(60);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #000000;
+
+    .left{
+        color: white;
+        font-size: font(40);
+        text-transform: uppercase;
+
+        img{
+            width: rm(151);
+            height: rm(44);
+            margin-bottom: rm(-7);
+        }
+    }
+
+    .right{
+        display: flex;
+        align-items: center;
+
+        .list{
+            display: flex;
+            align-items: center;
+
+            p{
+                font-size: font(24);
+                color: white;
+                padding: rm(0) rm(50);
+                transition: color .7s ease-in-out;
+
+                &:hover{
+                    color: color(blue-100);
+                }
+                // transition: border-color .7s ease-in-out;
+
+                // &:hover{
+                //     border-color: rgba($color: red, $alpha: 0);
+                // }
+            }
+        }
+    }
+}

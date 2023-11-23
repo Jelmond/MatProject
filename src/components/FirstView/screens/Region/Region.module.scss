@@ -1,0 +1,118 @@
+@use '../../../../../assets/styles/index.scss' as *;
+
+.region{
+    min-height: 100vh;
+    background-color: color(bg);
+    display: flex;
+    flex-direction: column;
+    padding-bottom: rm(329);
+
+    .startWrapper{
+        margin-top: rm(80);
+        padding-left: rm(80);
+        padding-right: rm(80);
+
+        img{
+            width: 100%;
+            height: rm(500);
+        }
+    }
+
+    .title{
+        color: white;
+        font-size: font(24);
+        text-transform: uppercase;
+        letter-spacing: rm(3);  
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: rm(40);
+    }
+
+    .examples{
+        padding-left: rm(80);
+        padding-right: rm(80);
+
+        .nav{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: space-between;
+
+           .lef{
+                color: white;
+                font-size: font(30);
+                transition: color .7s ease-in-out;
+                cursor: pointer;
+
+                &:hover{
+                    color: #1DAEFF;
+                }
+            }
+
+           .rig{
+                color: #1DAEFF;
+                font-size: font(30);
+                transition: color .7s ease-in-out;
+                cursor: pointer;
+
+                &:hover{
+                    color: white;
+                }
+            }
+        }
+
+        .cards{
+            display: flex;
+            justify-content: center;
+            gap: rm(20);
+            flex-wrap: wrap;
+            margin-top: rm(33);
+        }
+    }
+
+    .swiperContainer{
+        margin-bottom: rm(100);
+
+        .swiper{
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+
+            div{
+
+            }
+        }
+
+        .citySlide{
+            width: rm(278);
+            height: rm(383);
+            position: relative;
+
+            p{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 100%;
+                height: rm(62);
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: font(40);
+                color: white;
+                background-color: rgba($color: #000000, $alpha: 0.7);
+            }
+
+            img{
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                object-fit: cover;
+            }
+        }
+    }
+}

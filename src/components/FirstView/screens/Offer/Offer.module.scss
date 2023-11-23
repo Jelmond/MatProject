@@ -1,0 +1,38 @@
+@use '../../../../../assets/styles/index.scss' as *;
+
+.first{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: color(bg);
+
+    .container{
+
+        padding-top: rm(150);
+        padding-left: rm(50);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        >p:first-child{
+            width: rm(774);
+            color: white;
+            font-size: font(56);
+        }
+
+        >p:last-child{
+            width: rm(666);
+            color: #585981;
+            font-size: font(22);
+            margin-top: rm(30);
+        }
+    }
+
+    img{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+    }
+}

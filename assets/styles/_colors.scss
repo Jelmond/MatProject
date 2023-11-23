@@ -1,0 +1,21 @@
+@use 'sass:map';
+
+$colors: (
+    white-100: #FFFFFF,
+    blue-100: #1DAEFF,
+    bg: #0E1012,
+);
+@function color($name) {
+    @if not map.get($colors, $name) {
+        @error '"#{$name}" is not a valid color name';
+    }
+    @return var(--color-#{$name})
+  };
+  
+@function color-hex($name) {
+    @if not map-get($colors, $name) {
+        @error '"#{$name}" is not a valid color name';
+        @return var(--invalid-color-name);
+    }
+    @return map-get($colors, $name);
+}
