@@ -1,8 +1,8 @@
+import HouseInfo from "@/components/SecondView/SecondView";
+
 export default function page() {
 
     return (
-        <div>
-            
-        </div>
+        <HouseInfo></HouseInfo>    
     )
 }

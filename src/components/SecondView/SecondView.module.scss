@@ -1,0 +1,42 @@
+@use '../../../assets/styles/index.scss' as *;
+
+.houseInfo{
+    padding: rm(200) rm(120) rm(300);
+    background-color: color(bg);
+
+    .gigaImage{
+        width: 100%;
+        height: auto;
+    }
+
+    .status{
+        width: rm(860);
+        height: rm(60);
+        margin-top: rm(34);
+    }
+
+    .content{
+        width: rm(860);
+        height: rm(164);
+        margin-top: rm(20);
+    }
+
+    .description{
+        width: rm(873);
+        margin-top: rm(51);
+
+        >p:first-child{
+            color: #1DAEFF;
+            font-size: font(20);
+            margin-bottom: rm(30);
+            font-weight: 600;
+        }
+
+        >p:last-child{
+            font-size: font(16);
+            color: white;
+            opacity: .7;
+            line-height: rm(30);
+        }
+    }
+}
