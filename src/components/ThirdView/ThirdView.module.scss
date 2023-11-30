@@ -1,0 +1,54 @@
+@use '../../../assets/styles/index.scss' as *;
+
+.main{
+    margin-top: rm(70);
+    width: 100%;
+    background-color: color(bg);
+
+    .houses{
+        padding-left: rm(140);
+        padding-right: rm(140);
+        padding-top: rm(80);
+        display: flex;
+        flex-wrap: wrap;
+        gap: rm(16);
+        padding-bottom: rm(350);
+    }
+    
+    .banner{
+        color: white;
+        width: 100%;
+        position: relative;
+        width: 100%;
+        height: rm(300);
+
+        img{
+            position: absolute;
+            width: 100%;
+            height: rm(300);
+            top: 0;
+            left: 0;
+            z-index: 0;
+        }
+
+
+        .text{
+            position: relative;
+            z-index: 100;
+            padding-left: rm(150);
+            padding-top: rm(80);
+
+            >p:first-child{
+                font-size: font(56);
+                margin-bottom: rm(30);
+                width: rm(600);
+
+            }
+    
+            >p:last-child{
+                font-size: font(22);
+                width: rm(600);
+            }
+        }
+    }
+}

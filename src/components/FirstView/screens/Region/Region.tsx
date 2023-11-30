@@ -6,6 +6,7 @@ import { A11y, Navigation, Pagination, Scrollbar } from 'swiper/modules'
 import 'swiper/css/pagination';
 import 'swiper/swiper-bundle.css'
 import Card from './Card/Card';
+import Link from 'next/link';
 
 
 export default function Region() {
@@ -65,7 +66,7 @@ export default function Region() {
                 </div>
             </div>
             <div className={styles.startWrapper}>
-                <img className={styles.start} src='/startImage.png'/>
+                <Link href='/auth'><img className={styles.start} src='/startImage.png'/></Link>
             </div>
         </div>
     )

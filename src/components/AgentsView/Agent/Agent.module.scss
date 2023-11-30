@@ -1,0 +1,49 @@
+@use '../../../../assets/styles/index.scss' as *;
+
+.agent{
+    display: flex;
+    background-color: color(bg);
+
+    img{
+        width: rm(250);
+        height: rm(269);
+        margin-right: rm(20);
+    }
+
+    .info{
+        display: flex;
+        flex-direction: column;
+        gap: rm(20);
+        padding-top: rm(30);
+        color: white;
+
+        .text{
+            display: flex;
+            gap: rm(20);
+
+            >p:first-child{
+                font-size: font(30);
+            }
+
+            >p:last-child{
+                font-size: font(34);
+            }
+        }
+
+        .social{
+            display: flex;
+            color: white;
+
+
+            img{
+                width: rm(49);
+                height: rm(49);
+                margin-right: rm(20);
+            }
+
+            p{
+                font-size: font(30);
+            }
+        }
+    }
+}

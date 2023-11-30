@@ -11,8 +11,8 @@ export default function Header() {
             <div className={styles.right}>
                 <div className={styles.list}>
                     <Link href='/'><p>Главная</p></Link>
-                    <Link href='/chosen'><p>Недвижимость</p></Link>
-                    <Link href='/new'><p>Агенты</p></Link>
+                    <Link href='/houses'><p>Недвижимость</p></Link>
+                    <Link href='/agents'><p>Агенты</p></Link>
                     <Link href='/bucket'><p>Проекты</p></Link>
                 </div>
             </div>

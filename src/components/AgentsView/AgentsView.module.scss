@@ -1,0 +1,13 @@
+@use '../../../assets/styles/index.scss' as *;
+
+.agents{
+    display: flex;
+    background-color: color(bg);
+    padding-top: rm(300);
+    padding-bottom: rm(300);
+    flex-wrap: wrap;
+    padding-left: rm(150);
+    padding-right: rm(150);
+    gap: rm(40);
+    justify-content: center;
+}

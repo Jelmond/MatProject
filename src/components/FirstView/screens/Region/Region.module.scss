@@ -7,11 +7,32 @@
     flex-direction: column;
     padding-bottom: rm(329);
 
+    .swiper{
+        width: rm(1300) !important;
+
+        >:nth-child(1){
+            gap: rm(55);
+
+            div{
+                max-width: rm(278) !important;
+                width: 100% !important;
+                height: rm(383);
+            }
+        }
+    }
+
     .startWrapper{
         margin-top: rm(80);
         padding-left: rm(80);
         padding-right: rm(80);
+        width: 100%;
+        cursor: pointer;
+        transition: opacity .7s ease-in-out;
 
+        &:hover{
+            opacity: .7;
+        }
+        
         img{
             width: 100%;
             height: rm(500);
@@ -72,9 +93,10 @@
 
     .swiperContainer{
         margin-bottom: rm(100);
+        padding: rm(50);
 
         .swiper{
-            width: 90%;
+            width: 100%;
             display: flex;
             justify-content: center;
             align-items: center;

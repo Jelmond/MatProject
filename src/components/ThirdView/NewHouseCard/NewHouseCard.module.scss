@@ -1,0 +1,73 @@
+@use '../../../../assets/styles/index.scss' as *;
+
+
+.card{
+
+    display: flex;
+    flex-direction: column;
+    padding: rm(13);
+    border-radius: rm(30);
+    background-color: #17191C;
+    border: 1px solid transparent;
+    transition: border-color .7s ease-in-out;
+    width: rm(321);
+
+    &:hover{
+        border-color: #1DAEFF;
+    }
+
+
+    img{
+        width: rm(293);
+        height: rm(222);
+        margin-bottom: rm(18);
+    }
+
+    .info{
+        display: flex;
+        min-height: 100%;
+        flex-direction: column;
+        padding: rm(10) rm(0);
+        align-items: center;
+
+        .location{
+            display: flex;
+            flex-direction: column;
+            gap: rm(12);
+
+            .town{
+                display: flex;
+                font-size: font(16);
+                color: #8F90A6;
+                gap: rm(15);
+            }
+
+            .place{
+                font-size: font(20);
+                color: white;
+
+            }
+        }
+    }
+
+    .money{
+        display: flex;
+        gap: rm(16);
+        align-items: center;
+        margin-top: rm(10);
+
+
+        .priceText{
+            font-size: font(16);
+            color: #8F90A6;
+        }
+
+        .price{
+            padding: rm(8) rm(18);
+            background-color: #8F90A6;
+            color: white;
+            font-size: font(20);
+            border-radius: rm(10);
+        }
+    }
+}
